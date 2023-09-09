@@ -1,0 +1,39 @@
+.lap{
+    width: 61.3vw;
+    height: 30vh;
+    background:#1E2343 ;
+    position: absolute;
+    border-radius: 12px;
+    margin-top: 32px;
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 12px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mon{
+    width: 35vw;
+    text-align: center;
+}
+.tue{
+    color: white;
+    display: flex;
+    font-size: 28px;
+    justify-content: space-evenly; 
+}
+.h2{
+    text-align: center;
+    padding: 4px;
+}
+#d2{
+    text-align: center;
+    margin-left: 22px;
+}
+.press{
+    background: #FF6A6A;
+    border-radius: 12px;
+    padding: 6px;
+    color: white;
+    text-align: center;
+}

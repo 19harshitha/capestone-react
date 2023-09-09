@@ -1,0 +1,29 @@
+.article {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.image{
+    height: 703px;
+    width: 750px;
+}
+
+
+.header {
+    font-size: 55px;
+    color: white;
+    position: absolute;
+    bottom: 15vh;
+    left: 2vw;
+    right: 0;
+    margin: auto;
+}
+.footer{
+    font-size: 55px;
+    color: white;
+    position: absolute;
+    bottom: 5vh;
+    left: 2vw;
+    right: 0;
+    margin: auto;
+}

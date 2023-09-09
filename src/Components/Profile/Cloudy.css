@@ -1,0 +1,29 @@
+.mist{
+    width: 29.3vw;
+    height: 20vh;
+    background:#101744 ;
+    border-radius: 12px;
+    margin-top: 18px;
+}
+.rai{
+    height: 7vh;
+    background-color:#FF4ADE ;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+}
+.res{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+.show{
+    margin-bottom: 12px;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 40px;
+}

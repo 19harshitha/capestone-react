@@ -8,7 +8,7 @@ const Weather = ()=>{
     
     useEffect(()=>{
         const fetchWeather = async()=>{
-            await fetch("http://api.weatherapi.com/v1/current.json?key=987de39fe8924052ada80850232502&q=London&aqi=no")
+            await fetch("http://api.weatherapi.com/v1/current.json?key=2b32fac0499f444abb962125231009&q=India&aqi=no")
                 .then(async(data)=>await data.json()).then((data)=>setWeather(data)) 
         }
         fetchWeather()

@@ -7,7 +7,7 @@ import Countdown from '../Components/Profile/Countdown'
 const Profile = ()=>{
     const navigate = useNavigate()
     const handleClick = ()=>{
-        navigate('/List_app')
+        navigate('/Movie_api')
     }
     return (
         <div style={{height:"100vh",width:"100vw",background:"black",paddingLeft:"3vw",paddingTop:"3vh",boxSizing:"border-box"}}>
@@ -26,7 +26,7 @@ const Profile = ()=>{
         </div>
         <button style={{position:"absolute",bottom:"2vh",right:"3vw",
         background:"green",border:"none", fontSize:"1.2rem",
-        color:"white",padding:"12px",borderRadius:"12px"}} onClick={handleClick}>Next Page</button> 
+        color:"white",padding:"12px",borderRadius:"12px"}} onClick={handleClick}>Browse</button> 
         </div>
          )
         }

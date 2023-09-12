@@ -34,7 +34,7 @@ const List_movie = ({ genres }) => {
 
   return (
    <>
-   <h2 style={{color:"yellow"}}>Genre &nbsp;{genres }</h2>
+   <h2 style={{color:"yellow"}}> &nbsp;{genres }</h2>
    
    <div class="card1">
         {movies ? (

@@ -24,18 +24,9 @@ const Movie_api = () => {
   <div className='icon'>
  <img src={img14} width={"100px"} height={"90px"}  />
  </div> 
- </div>
-
- <div  className="list_app">
-      
-        <List_movie  genres={genre} />  
- </div>
- <div>
-
- </div>
- <div>
-
- </div>
+ </div>   
+      <List_movie  genres={genre} />  
+ 
  <button style={{position:"relative",bottom:"2vh",left:"92vw",
         background:"green",border:"none", fontSize:"1.2rem",
         color:"white",padding:"12px",borderRadius:"12px"}} onClick={handleClick}>Browse</button> 

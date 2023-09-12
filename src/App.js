@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Sign from './Components/Sign';
+import { Routes,Route } from 'react-router-dom';
+import Page2 from './Components/Page2';
+import Bio from "./Slides/Profile";
+import Movie_api from './Components/Movie_api';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+   <div className='App'>
+   
+   <Routes>
+   <Route path='/'element={<Sign/>}   />
+    <Route path='/Page2'element={<Page2/>}/>
+    <Route path='/Bio'element={<Bio/>}   />
+    <Route path='/Movie_api'element={<Movie_api/>}   />
+   </Routes>
+   </div>
+    
   );
 }
 

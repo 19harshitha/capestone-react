@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import "./Cloudy.css";
+import axios from 'axios';
 
 const Weather = ()=>{
     const [date, setDate] = useState("")
@@ -7,12 +8,19 @@ const Weather = ()=>{
     const [weather, setWeather] = useState(false)
     
     useEffect(()=>{
-        const fetchWeather = async()=>{
-            await fetch("http://api.weatherapi.com/v1/current.json?key=2b32fac0499f444abb962125231009&q=India&aqi=no")
-                .then(async(data)=>await data.json()).then((data)=>setWeather(data)) 
-        }
-        fetchWeather()
-    },[])
+        const apiUrl = `http://api.weatherapi.com/v1/current.json?key=2b32fac0499f444abb962125231009&q=Bangalore`;
+
+    axios.get(apiUrl)
+      .then((response) => {
+        setWeather(response.data);
+      })
+      .catch((error) => {
+        console.error('Error fetching weather data:', error);
+      });
+  }, [ ]);
+
+
+
     useEffect(()=>{
         const date = new Date
         var hours = date.getHours();
